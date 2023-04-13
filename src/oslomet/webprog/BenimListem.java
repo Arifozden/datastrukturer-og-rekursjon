@@ -1,20 +1,20 @@
 package oslomet.webprog;
 
-class Node{
+class Node1{
     int data;
-    Node sonraki;
+    Node1 sonraki;
 
-    public Node(int data){
+    public Node1(int data){
         this.data=data;
     }
 }
 
 public class BenimListem {
-    private Node kafa = null;
-    private Node kuyruk = null;
+    private Node1 kafa = null;
+    private Node1 kuyruk = null;
 
     public void ekleNode(int deger) {
-        Node yeniNode = new Node(deger);
+        Node1 yeniNode = new Node1(deger);
 
         if (kafa == null) {
             kafa = yeniNode;
@@ -26,7 +26,7 @@ public class BenimListem {
     }
 
     public void yazdir() {
-        Node buNode = kafa;
+        Node1 buNode = kafa;
 
         if (kafa != null) {
             do {
